@@ -1,0 +1,433 @@
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hardem Web</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/sepetli-navbar.css" />
+    <link rel="stylesheet" href="css/urunler.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">HARDEM WEB</a>
+
+        <!-- Mobil için sepet ikonu -->
+        <div class="cart-icon d-lg-none me-2" id="mobileCartIcon">
+          <i
+            class="fas fa-shopping-cart"
+            style="color: #d4af37; font-size: 20px"
+          ></i>
+          <span class="cart-count">0</span>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarContent"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">ANASAYFA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hakkımda.html">HAKKIMDA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="urunler.html">ÜRÜNLER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="iletisim.html">İLETİŞİM</a>
+            </li>
+          </ul>
+          <!-- Desktop için sepet ikonu -->
+          <div class="cart-icon d-none d-lg-block" id="cartIcon">
+            <i
+              class="fas fa-shopping-cart"
+              style="color: #d4af37; font-size: 20px"
+            ></i>
+            <span class="cart-count">0</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sepet Panel -->
+    <div class="cart-panel" id="cartPanel">
+      <div class="cart-header">
+        <h4>Sepetim</h4>
+        <span class="cart-close" id="cartClose">&times;</span>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <!-- Sepet ürünleri buraya dinamik olarak eklenecek -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Toplam:</span>
+          <span id="cartTotal">0,00₺</span>
+        </div>
+        <button class="checkout-btn" id="SiparişTamamla">
+          Siparişi Tamamla
+        </button>
+      </div>
+    </div>
+    <!-- Ürünler -->
+    <!-- Ürünler Sayfası Başlangıç -->
+    <div class="contact-container">
+      <div class="container">
+        <h1 class="section-title">Ücretsiz Dijital Ürünler</h1>
+        <p class="section-subtitle">İhtiyacınız olan dijital E-Kitaplar</p>
+
+        <div class="row g-4">
+          <!-- Excel Ürünü -->
+          <div class="col-md-6 col-lg-4">
+            <div class="product-card text-center">
+              <img src="images/80x80.png" alt="Excel" class="file-icon" />
+              <h3 class="product-title">
+                Rastgele Steam Facebook League Of Legends Spotify Hesapları
+              </h3>
+              <div class="price">45,00₺</div>
+              <button class="btn btn-download">Sepete Ekle</button>
+            </div>
+          </div>
+
+          <!-- PDF Ürünü -->
+          <div class="col-md-6 col-lg-4">
+            <div class="product-card text-center">
+              <img src="images/80x80.png" alt="Excel" class="file-icon" />
+              <h3 class="product-title">
+                Spotify'ı Ücretsiz Kullanmanın Etik Yolları: Adım Adım Rehber E
+                Kitap
+              </h3>
+              <div class="price">199,99₺</div>
+              <button class="btn btn-download">Sepete Ekle</button>
+            </div>
+          </div>
+
+          <!-- Ekstra Ürün -->
+          <div class="col-md-6 col-lg-4">
+            <div class="product-card text-center">
+              <img src="images/80x80.png" alt="Excel" class="file-icon" />
+              <h3 class="product-title">
+                Netflix'i Daha Akıllıca Kullanmanın 10 Yasal Yolu
+              </h3>
+              <div class="price">67,50₺</div>
+              <button class="btn btn-download">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ürünler son 3 ürün -->
+    <div class="contact-container">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Excel Ürünü -->
+          <div class="col-md-6 col-lg-4">
+            <div class="product-card text-center">
+              <img src="images/80x80.png" alt="Excel" class="file-icon" />
+              <h3 class="product-title">
+                Sosyal Medyada Veri Analizi: Instagram Bilgi Toplama Taktikleri
+              </h3>
+              <div class="price">89,00₺</div>
+              <button class="btn btn-download">Sepete Ekle</button>
+            </div>
+          </div>
+
+          <!-- PDF Ürünü -->
+          <div class="col-md-6 col-lg-4">
+            <div class="product-card text-center">
+              <img src="images/80x80.png" alt="Excel" class="file-icon" />
+              <h3 class="product-title">
+                WhatsApp Hesaplarını Devre Dışı Bırakma Rehberi: Adım Adım
+                Yöntemler
+              </h3>
+              <div class="price">349,00₺</div>
+              <button class="btn btn-download">Sepete Ekle</button>
+            </div>
+          </div>
+
+          <!-- Ekstra Ürün -->
+          <div class="col-md-6 col-lg-4">
+            <div class="product-card text-center">
+              <img src="images/80x80.png" alt="Excel" class="file-icon" />
+              <h3 class="product-title">
+                Ücretsiz YouTube Premium, Canva ve Spotify İçin Etkili Yöntemler
+              </h3>
+              <div class="price">49,90₺</div>
+              <button class="btn btn-download">Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Başlangıç -->
+    <footer class="py-5">
+      <div class="container footer-content">
+        <div class="row g-4">
+          <!-- Company Info -->
+          <div class="col-lg-4 col-md-6">
+            <h5 class="footer-title">HARDEM</h5>
+            <p class="company-description mb-4">
+              Dijital dünyada mükemmelliği hedefleyen, yenilikçi çözümler ve
+              profesyonel hizmet anlayışıyla müşterilerimizin yanındayız.
+              Geleceği birlikte şekillendiriyoruz.
+            </p>
+            <div class="social-icons mb-4">
+              <a href="#" class="social-icon animated-icon">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="social-icon animated-icon">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="#" class="social-icon animated-icon">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="#" class="social-icon animated-icon">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hızlı Hizmetler -->
+          <div class="col-lg-2 col-md-6">
+            <h5 class="footer-title">Hızlı Linkler</h5>
+            <ul class="footer-links">
+              <li><a href="#">Anasayfa</a></li>
+              <li><a href="#">Hakkımızda</a></li>
+              <li><a href="#">Ürünler</a></li>
+              <li><a href="#">İletişim</a></li>
+            </ul>
+          </div>
+
+          <!-- Hizmetler -->
+          <div class="col-lg-2 col-md-6">
+            <h5 class="footer-title">Hizmetler</h5>
+            <ul class="footer-links">
+              <li><a href="#">Dijital Ürünler</a></li>
+              <li><a href="#">Web Tasarım</a></li>
+              <li><a href="#">Backend Tasarım</a></li>
+              <li><a href="#">SEO Hizmeti</a></li>
+            </ul>
+          </div>
+
+          <!-- İletişim Kısmı -->
+          <div class="col-lg-4 col-md-6">
+            <h5 class="footer-title">Bize Ulaşın</h5>
+            <div class="contact-info mb-4">
+              <p>
+                <i class="bi bi-geo-alt animated-icon"></i> Merkez Mah. Ana
+                Cadde No:123 İstanbul
+              </p>
+              <p>
+                <i class="bi bi-telephone animated-icon"></i> +90 530 952 04 66
+                <br />+90 530 394 47 73
+              </p>
+              <p>
+                <i class="bi bi-envelope animated-icon"></i> info@hardem.com
+              </p>
+            </div>
+
+            <h5 class="footer-title">Bültenimize Katılın</h5>
+            <div class="newsletter-form">
+                <form action="php/bülten.php" method="post">
+                    <input type="email" name="email" class="newsletter-input" placeholder="E-posta adresinizi girin">
+                    <button type="submit" class="btn-subscribe w-100">Abone Ol</button>
+                </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Alt Yazı -->
+        <div class="footer-bottom">
+          <p class="mb-0">&copy; 2024 Hardem. Tüm hakları saklıdır.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer bitiş -->
+    <!-- Bootstrap JS ve Custom Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const cartIcon = document.getElementById("cartIcon");
+        const mobileCartIcon = document.getElementById("mobileCartIcon");
+        const cartPanel = document.getElementById("cartPanel");
+        const cartClose = document.getElementById("cartClose");
+        const cartItems = document.getElementById("cartItems");
+        const cartCount = document.querySelectorAll(".cart-count");
+        const cartTotal = document.getElementById("cartTotal");
+        const addButtons = document.querySelectorAll(".btn-download");
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        // Her iki sepet ikonuna da click event listener ekle
+        function openCart() {
+          cartPanel.classList.add("active");
+          updateCartDisplay();
+        }
+
+        cartIcon.addEventListener("click", openCart);
+        mobileCartIcon.addEventListener("click", openCart);
+
+        cartClose.addEventListener("click", () => {
+          cartPanel.classList.remove("active");
+        });
+
+        // Sepete ürün ekle
+        addButtons.forEach((button, index) => {
+          button.addEventListener("click", () => {
+            const productCard = button.closest(".product-card");
+            const product = {
+              id: index,
+              name: productCard.querySelector(".product-title").textContent,
+              price:
+                parseFloat(productCard.querySelector(".price").textContent) ||
+                0,
+              quantity: 1,
+            };
+            addToCart(product);
+            showNotification("Ürün sepete eklendi!");
+          });
+        });
+
+        function addToCart(product) {
+          const existingProduct = cart.find((item) => item.id === product.id);
+          if (existingProduct) {
+            existingProduct.quantity++;
+          } else {
+            cart.push(product);
+          }
+          updateCart();
+        }
+
+        function updateCart() {
+          localStorage.setItem("cart", JSON.stringify(cart));
+          updateCartCount();
+          updateCartDisplay();
+          updateCartTotal();
+        }
+
+        function updateCartCount() {
+          const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+          cartCount.forEach((count) => {
+            count.textContent = totalItems;
+          });
+        }
+
+        function updateCartTotal() {
+          const total = cart.reduce(
+            (sum, item) => sum + item.price * item.quantity,
+            0
+          );
+          cartTotal.textContent = total.toFixed(2) + "₺";
+        }
+
+        function updateCartDisplay() {
+          cartItems.innerHTML = "";
+          cart.forEach((item) => {
+            const cartItem = document.createElement("div");
+            cartItem.className = "cart-item";
+            cartItem.innerHTML = `
+                     <div class="item-details">
+                         <h5 class="item-title">${item.name}</h5>
+                         <div class="item-quantity">
+                             <button class="quantity-btn" onclick="updateQuantity(${item.id}, -1)">-</button>
+                             <span>${item.quantity}</span>
+                             <button class="quantity-btn" onclick="updateQuantity(${item.id}, 1)">+</button>
+                         </div>
+                     </div>
+                     <span class="remove-item" onclick="removeFromCart(${item.id})">&times;</span>
+                 `;
+            cartItems.appendChild(cartItem);
+          });
+        }
+
+        window.updateQuantity = function (id, change) {
+          const item = cart.find((item) => item.id === id);
+          if (item) {
+            item.quantity += change;
+            if (item.quantity < 1) {
+              removeFromCart(id);
+            } else {
+              updateCart();
+            }
+          }
+        };
+
+        window.removeFromCart = function (id) {
+          cart = cart.filter((item) => item.id !== id);
+          updateCart();
+        };
+
+        function showNotification(message) {
+          const notification = document.createElement("div");
+          notification.className = "notification";
+          notification.textContent = message;
+          document.body.appendChild(notification);
+
+          setTimeout(() => {
+            notification.remove();
+          }, 2000);
+        }
+
+        const SiparişTamamla = document.getElementById("SiparişTamamla");
+        SiparişTamamla.addEventListener("click", () => {
+            // localStorage'daki sepet verilerini al
+            const sepetVerileri = localStorage.getItem("cart");
+
+            // Eğer sepet boş değilse sunucuya gönder
+            if (sepetVerileri) {
+                fetch("php/sipariş.php", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    sepet: JSON.parse(sepetVerileri), // JSON formatında gönder
+                }),
+                })
+                .then((response) => response.json())
+                .then((data) => {
+                    if (data.success) {
+                        console.log("Sipariş başarıyla gönderildii:", data.message);
+                        // İşlem başarılıysa localStorage'ı temizleyebilirsiniz
+                        cart = [];
+                        updateCart();
+                    } else {
+                        console.error("Sipariş gönderilemedi:", data.message);
+                    }
+                })
+                .catch((error) => {
+                    console.error("Bir hata oluştu:", error);
+                });
+            } else {
+                console.log("Sepet boş.");
+            }
+        });
+        // Sayfa yüklendiğinde sepeti güncelle
+        updateCart();
+      });
+    </script>
+  </body>
+</html>

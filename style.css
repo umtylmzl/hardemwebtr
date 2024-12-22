@@ -1,0 +1,213 @@
+
+/* Hizmetler Başlangıç */
+/* Ana Stiller */
+.hero-section {
+    background-color: #1a1a1a;
+    color: #fff;
+    min-height: 100vh;
+    padding: 4rem 0;
+}
+
+.main-title {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #ffd700;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+/* Servis Kartları */
+.service-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    height: 100%;
+    transition: transform 0.3s, background-color 0.3s;
+    color: #1a1a1a;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    background-color: #212529;
+
+}
+
+.service-card h3 {
+    color: #1a1a1a;
+}
+
+.service-card:hover h3 {
+    color: white;
+}
+
+.service-icon {
+    color: #ffd700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.service-icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.daha-fazla {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.service-card:hover .daha-fazla {
+    color: #ffd700;
+}
+/* Modal Stilleri */
+.modal-content {
+    background-color: white;
+    color: #1a1a1a;
+}
+
+.modal-header {
+    border-bottom-color: #dee2e6;
+}
+
+.modal-title {
+    color: #1a1a1a;
+}
+
+.modal .form-label {
+    color: #1a1a1a;
+}
+
+/* Form input stilleri düzeltildi */
+.modal .form-control,
+.modal .form-select {
+    color: #1a1a1a !important;
+    background-color: white !important;
+}
+
+/* Input focus durumu */
+.modal .form-control:focus,
+.modal .form-select:focus {
+    color: #1a1a1a !important;
+    background-color: white !important;
+    border-color: #ffd700;
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+
+/* Placeholder rengi */
+.modal .form-control::placeholder {
+    color: #6c757d;
+}
+
+.modal .dropdown-toggle {
+    color: white;
+}
+
+.modal .dropdown-menu {
+    background-color: white;
+}
+
+.modal .dropdown-item {
+    color: #1a1a1a;
+}
+
+.modal .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.modal .btn-primary {
+    background-color: #0d6efd;
+    color: white;
+}
+/* Hizmetler Bitiş */
+
+/* Tanıtım Videosu css başlangıç */
+.hero-section {
+    background-color: #1a1a1a;
+    color: #fff;
+    min-height: 100vh;
+    padding: 4rem 0;
+}
+.main-title {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.subtitle {
+    color: #ffd700;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+.video-container {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    border: 2px solid #ffd700;
+}
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #000;
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.video-info {
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+}
+.video-info h3 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+.video-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.custom-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.control-btn {
+    background: rgba(255, 215, 0, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.control-btn:hover {
+    background: #ffd700;
+    transform: scale(1.1);
+}
+.control-btn svg {
+    width: 24px;
+    height: 24px;
+    fill: #1a1a1a;
+}
+/* Tanıtım Videosu css bitiş */

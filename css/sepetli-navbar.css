@@ -1,0 +1,230 @@
+    /* navbar başlangıç */
+    .navbar {
+        background-color: rgba(17, 17, 17, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 1rem 2rem;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    }
+
+    .navbar-brand {
+        color: #D4AF37;
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-brand:hover {
+        color: #D4AF37;
+        transform: translateY(-2px);
+    }
+
+    .nav-link {
+        color: white !important;
+        font-weight: 500;
+        padding: 0.5rem 1.2rem !important;
+        margin: 0 0.3rem;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+        color: #D4AF37 !important;
+        background-color: rgba(212, 175, 55, 0.1);
+    }
+
+    .navbar-toggler {
+        border-color: rgba(212, 175, 55, 0.3);
+        padding: 0.5rem 0.75rem;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(212, 175, 55, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    /* Sepet İkonu Stilleri */
+    .cart-icon {
+        position: relative;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    .cart-count {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        background-color: #D4AF37;
+        color: white;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Sepet Panel Stilleri */
+    .cart-panel {
+        position: fixed;
+        top: 0;
+        right: -400px;
+        width: 400px;
+        height: 100vh;
+        background: #222222;
+        padding: 20px;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+        overflow-y: auto;
+    }
+
+    .cart-panel.active {
+        right: 0;
+    }
+
+    .cart-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .cart-header h4 {
+        color: white;
+        margin: 0;
+    }
+
+    .cart-close {
+        color: #D4AF37;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .cart-items {
+        padding: 20px 0;
+    }
+
+    .cart-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        color: white;
+    }
+
+    .item-details {
+        flex-grow: 1;
+        padding: 0 15px;
+    }
+
+    .item-title {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .item-quantity {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 5px;
+    }
+
+    .quantity-btn {
+        background: none;
+        border: none;
+        color: #D4AF37;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .remove-item {
+        color: #ff4d4d;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .cart-footer {
+        position: sticky;
+        bottom: 0;
+        background: #222222;
+        padding: 20px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .cart-total {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        margin-bottom: 15px;
+    }
+
+    .checkout-btn {
+        width: 100%;
+        padding: 12px;
+        background: #D4AF37;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .checkout-btn:hover {
+        background: #c49f32;
+    }
+
+    /* Notification Stili */
+    .notification {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #D4AF37;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 5px;
+        animation: slideIn 0.5s ease-out;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    /* Responsive Tasarım */
+    @media (max-width: 991.98px) {
+        .navbar-nav {
+            padding: 1rem 0;
+        }
+        
+        .nav-link {
+            padding: 0.5rem 0 !important;
+            margin: 0.2rem 0;
+        }
+
+        .cart-panel {
+            width: 100%;
+            right: -100%;
+        }
+
+        #mobileCartIcon {
+            order: 1;
+            margin-right: 1rem;
+        }
+
+        .navbar-toggler {
+            order: 2;
+        }
+    }
